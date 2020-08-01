@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestRun</title>
+    
+    <style>
+        body {
+            background: url("testrun_files/testrun_images/bodybg_light.png");
+        }
+        header {
+            background: pink
+        }
+        .header-text {
+            font-size: 20px; 
+            width: 70%;
+            display: inline-block;
+        }
+        .openbtn {
+            font-size: 20px; 
+            cursor: pointer; 
+            display: inline-block; 
+            position: absolute; 
+            right: 50px;
+            }
+        .overlay {            
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0, 0.9);
+            overflow-y: hidden;
+            transition: 0.5s;
+            }
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            display: block;
+            transition: 0.3s;
+        }
+        .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+        }
+        
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+        
+        @media screen and (max-height:450px) {
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+        @media screen and (min-width: 500px){
+            .header-text {
+                font-size: 30px; 
+                display: inline-block;
+        }
+            .openbtn {
+                display: none;
+            }
+            .overlay {     
+                position: relative;
+                display: inline;
+                background-color: rgb(0, 0, 0, 0.4);
+            }
+            .overlay-content {
+                display: inline;
+                text-align: right;
+            
+            
+        }
+        .overlay a {
+            display: none;
+        }
+        .overlay-content a {
+            padding: 3px;
+            text-decoration: none;
+            font-size: 17px;
+            display: inline;
+        }   
+            
+            
+            
+            
+        }
+    </style>
+    
+</head>
+
+<body>
+   <div class="container">
+     <header><h1 class="header-text">TEST-RUN</h1>
+     <span class="openbtn" onclick="openNav()">&#9776;</span>
+      <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Career</a>
+              <a href="#">Contact</a>
+          </div>
+      </div>
+      </header>
+      <hr style="width: 90%">
+      <h2>Slide Right Fullscreen Overlay Nav Example</h2>
+      <p>Lorem ipskum dolor sit amet, consectetur adipisicing elit. Tenetur, esse. Et eum atque voluptates quidem mollitia laboriosam? Laudantium fuga voluptas vitae, sapiente tempore, debitis neque id hic maiores eaque velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quas, adipisci aliquid facilis cupiditate ipsa. Ullam quam veritatis odio eius nesciunt optio nostrum, mollitia ab ea, laudantium facilis nam assumenda.</p>
+      
+      
+      
+      
+       
+       
+       
+       
+       
+   </div>
+   
+   
+   
+<script>
+    function openNav() {
+        document.querySelector("#myNav").style.height="100%";
+    }
+    
+    function closeNav() {
+        document.querySelector("#myNav").style.height="0%";
+    }
+</script>
+</body>
+</html>

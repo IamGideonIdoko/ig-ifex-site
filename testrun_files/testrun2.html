@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestRun 2</title>
+    <link rel="stylesheet" href="../igifexstyles/icons/fontawesome/css/all.min.css">
+    <style>
+        .tiptext {
+            background: yellow;
+            visibility: hidden;
+        }
+        .tooltip active {
+            background-color: green;
+}
+        
+        .tooltip.active .tiptext  {
+            visibility: visible;
+}
+        .font-test {
+        font-family:verdan, aril, heletica,segoe ui, sans-serif /*helvetica*/ /*sans-serif*/;
+/*font-family: "Segoe UI", Arial, sans-serif;*/
+}
+        
+        
+    
+    </style>
+</head>
+<body>
+    <h1><span class="fa fa-book">Some dummy text</span></h1>
+    
+    <h1 class="font-test">Christ's Love For Us All
+    contact me</h1>
+    <h1 class="font-test">THE NAME OF THIS FONT IS HUMANIST
+ for the name of the lord is a strong tower the righteous forgive
+Grotesque</h1>
+   <p class="font-test">The name of thelord is a strong tower the righteous</p>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="tooltip">HOVER HERE
+        <span class="tiptext active">Example Tooltip</span>
+    </div>
+    <button class="togbtn">Toggle</button>
+<script>
+var tooltip = document.querySelector(".tooltip");
+const tbtn = document.querySelector(".togbtn");
+    tbtn.addEventListener("click", function(){
+        tooltip.classList.toggle("active");
+    } )
+</script>
+</body>
+</html>

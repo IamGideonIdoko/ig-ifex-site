@@ -1,0 +1,15 @@
+GENERAL INFO OF IG-IFEX SITE
+
+------------------------------------------------------
+COLORS
+------------------------------------------------------
+Body Background Color -> rgba(183, 190, 190, 0.6)
+
+Header Background Color -> rgba(128, 0, 11, 0.7);
+Header Foreground Color -> rgba(225, 226, 179, 0.9);
+
+Footer Background Color -> rgba(128, 0, 11, 0.7);
+Footer Foreground Color -> rgba(225, 226, 179, 0.9);
+
+Panel Background Color -> rgba(225, 226, 179, 0.9);
+Panel Foreground Color -> black;
